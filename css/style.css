@@ -1,1 +1,8 @@
-/*# sourceMappingURL=style.css.map */
+header {
+  padding-top: 21px;
+}
+header .container {
+  max-width: 1165px;
+  width: 95%;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */

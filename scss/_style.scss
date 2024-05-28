@@ -1,0 +1,158 @@
+header {
+  padding-top: 21px;
+  background-color: $back-color;
+  padding-bottom: 33px;
+  .container {
+    @include container;
+    ul {
+      display: flex;
+      justify-content: start;
+      gap: 35px;
+      align-items: center;
+      a {
+        color: $main-color;
+        font-family: $main-font;
+      }
+    }
+  }
+}
+.s-1 {
+  background-color: $back-color;
+  display: flex;
+  .container {
+    @include container;
+    .tranding {
+      font-size: 24px;
+      font-family: $main-font;
+      color: $main-color;
+      font-weight: $main-weight;
+      margin-bottom: 27px;
+    }
+    .cardswrapper {
+      padding-bottom: 57px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .card {
+      @include card;
+    }
+    .backgimgdiv1 {
+      background-image: url(../images/backimage1.png);
+    }
+    .backgimgdiv2 {
+      background-image: url(../images/backimage2.png);
+    }
+    .backgimgdiv3 {
+      background-image: url(../images/backimage3.png);
+    }
+    .backgimgdiv {
+      @include backimgdiv;
+      h2 {
+        @include backgroundimgtext;
+      }
+    }
+    .textwrapper {
+      @include textwrapper;
+      p {
+        @include cardp;
+      }
+    }
+    .iconwrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      i {
+        color: $card-font-color;
+      }
+    }
+  }
+}
+.s-2 {
+  background-color: $back-color;
+  padding-bottom: 36px;
+  .container {
+    @include container;
+    .happeningnow {
+      margin-bottom: 30px;
+      h2 {
+        color: $main-color;
+        font-family: $main-font;
+        font-weight: 800;
+        font-size: 24px;
+      }
+    }
+    .imagewrapper {
+      display: flex;
+      gap: 45px;
+      .imagewrapper1 {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 758px;
+        width: 95%;
+        .imagetext {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-image: url(../images/image1.png);
+          height: 430px;
+          h2 {
+            color: $secondary-color;
+            font-family: $main-font;
+            font-weight: $main-weight;
+            font-size: 20px;
+          }
+        }
+      }
+      .imagewrapper2 {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        max-width: 360px;
+        width: 95%;
+      }
+    }
+  }
+}
+footer {
+  background-color: $footer-back-color;
+  padding-top: 60px;
+  padding-bottom: 45px;
+  .container{
+    @include container;
+    .listwrapper {
+      display: flex;
+      gap: 75px;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        a {
+          font-family: $main-font;
+          font-size: 12px;
+          color: $footer-text-color;
+          font-weight: $main-weight
+        }
+      }
+    }
+    .logowrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 700px;
+      p {
+        color: $secondary-color;
+        font-size: 12px;
+        font-family: $main-font;
+        font-weight: 400;
+      }
+      img {
+        height: 40px;
+      }
+    }
+  }
+  .footercontainer {
+    display: flex;
+    gap: 112px
+  }
+}
